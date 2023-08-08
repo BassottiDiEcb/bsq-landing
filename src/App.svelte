@@ -5,9 +5,9 @@
 
 <div class="font-montserrat">
 	<section class="h-screen bg-blue-300">
-		<header class="flex justify-around p-8">
+		<header class="flex justify-around items-center p-8">
 			<h1 class="font-bold text-2xl text-white">BSQ</h1>
-			<nav class="flex gap-x-4">
+			<nav class="flex gap-x-12">
 				<NavigationLink href="home" text="Home" />
 				<NavigationLink href="about_us" text="About us" />
 			</nav>
@@ -23,13 +23,18 @@
 	</section>
 	<section class="flex justify-center">
 		<div class="p-32 w-1/2 flex flex-col items-center text-center gap-y-4">
-			<p class="font-bold text-3xl">We are BSQ!!!</p>
+			<p class="font-bold text-3xl uppercase">We are BSQ!!!</p>
 			<p class="leading-loose">
 				Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos delectus architecto velit
 				corrupti natus necessitatibus iure ad blanditiis. Corporis nobis laboriosam, pariatur in
 				nisi doloribus laudantium iure dolores laborum voluptatum.
 			</p>
 			<Button text="About us" color="text-black" border="border-black" />
+		</div>
+	</section>
+	<section class="flex justify-center bg-stone-100">
+		<div class="p-32 w-1/2 flex justify-around gap-x-4">
+			<p class="font-bold text-3xl uppercase">I Nostri servizi</p>
 		</div>
 	</section>
 </div>
