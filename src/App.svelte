@@ -11,7 +11,7 @@
 </script>
 
 <div class="font-montserrat">
-	<section class="h-screen flex justify-center bg-center bg-cover" style="background-image: url(../public/sea.jpg);">
+	<section class="h-screen flex justify-center bg-center bg-cover" style="background-image: url(/sea.jpg);">
 		<!-- <header class="flex w-2/3 justify-between items-center p-8 fixed top-0 transition-colors duration-200" class:bg-black={scrolled}> -->
 		<header class="flex w-2/3 mt-8 bg-opacity-20 rounded-lg justify-between items-center p-8 fixed top-0 transition-colors" class:backdrop-blur={scrolled} class:bg-gray-700={scrolled}>
 			<h1 class="font-bold text-2xl text-white">BSQ</h1>
@@ -52,12 +52,12 @@
 			<p class="font-bold text-3xl text-center">I NOSTRI SERVIZI</p>
 
 			<div class="grid grid-cols-3 gap-8">
-				<Box title="Telecomunicazioni" image="url(../public/antenna.jpg)" />
-				<Box title="Cloud - Data Center & Cyber Security" image="url(../public/ethernet.jpg)" />
-				<Box title="Energia" image="url(../public/energia.jpg)" />
-				<Box title="Laser Scanner" image="url(../public/laser.jpg)" />
-				<Box title="Realtà Virtuale" image="url(../public/vr.jpg)" />
-				<Box title="Droni" image="url(../public/drone.jpg)" />
+				<Box title="Telecomunicazioni" image="url(/antenna.jpg)" />
+				<Box title="Cloud - Data Center & Cyber Security" image="url(/ethernet.jpg)" />
+				<Box title="Energia" image="url(/energia.jpg)" />
+				<Box title="Laser Scanner" image="url(/laser.jpg)" />
+				<Box title="Realtà Virtuale" image="url(/vr.jpg)" />
+				<Box title="Droni" image="url(/drone.jpg)" />
 			</div>
 		</div>
 	</section>
