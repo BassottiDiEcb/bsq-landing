@@ -5,7 +5,7 @@
 
   function handleClick() {
     const words = window.location.href.split('#')
-    console.log(window.location.href, words[1]);
+    console.log(words[1] == href)
     return words[1] === href
   }
 </script>
