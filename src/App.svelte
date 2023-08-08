@@ -1,6 +1,6 @@
 <script lang="ts">
-	import Button from './components/Button.svelte'
-	import NavigationLink from './components/NavigationLink.svelte'
+	import Button from './components/Button.svelte';
+	import NavigationLink from './components/NavigationLink.svelte';
 </script>
 
 <div class="font-montserrat">
@@ -22,11 +22,14 @@
 		</div>
 	</section>
 	<section class="flex justify-center">
-		<p>We are BSQ!!!</p>
-		<p>
-			Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos delectus architecto velit
-			corrupti natus necessitatibus iure ad blanditiis. Corporis nobis laboriosam, pariatur in nisi
-			doloribus laudantium iure dolores laborum voluptatum.
-		</p>
+		<div class="p-32 w-1/2 flex flex-col items-center text-center gap-y-4">
+			<p class="font-bold text-3xl">We are BSQ!!!</p>
+			<p class="leading-loose">
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos delectus architecto velit
+				corrupti natus necessitatibus iure ad blanditiis. Corporis nobis laboriosam, pariatur in
+				nisi doloribus laudantium iure dolores laborum voluptatum.
+			</p>
+			<Button text="About us" color="text-black" border="border-black" />
+		</div>
 	</section>
 </div>
