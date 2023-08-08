@@ -1,40 +1,94 @@
 <script lang="ts">
-	import Button from './components/Button.svelte';
+	import Box from './components/Box.svelte'
 	import NavigationLink from './components/NavigationLink.svelte';
+	import Icon from '@iconify/svelte';
+
+	let scrolled = false;
+
+	document.addEventListener('scroll', () => {
+		scrolled = window.scrollY > 0;
+	})
 </script>
 
 <div class="font-montserrat">
-	<section class="h-screen bg-blue-300">
-		<header class="flex justify-around items-center p-8">
+	<section class="h-screen flex justify-center bg-center bg-cover" style="background-image: url(../public/sea.jpg);">
+		<!-- <header class="flex w-2/3 justify-between items-center p-8 fixed top-0 transition-colors duration-200" class:bg-black={scrolled}> -->
+		<header class="flex w-2/3 mt-8 bg-opacity-20 rounded-lg justify-between items-center p-8 fixed top-0 transition-colors" class:backdrop-blur={scrolled} class:bg-gray-700={scrolled}>
 			<h1 class="font-bold text-2xl text-white">BSQ</h1>
 			<nav class="flex gap-x-12">
-				<NavigationLink href="home" text="Home" />
-				<NavigationLink href="about_us" text="About us" />
+				<NavigationLink href="#about_us" text="About us" />
+				<NavigationLink href="#our_services" text="Our services" />
+				<NavigationLink href="#learning" text="Learning" />
 			</nav>
 		</header>
-		<div class="h-[calc(100%-96px)] flex justify-center items-center text-white">
+		<div class="h-[calc(100%-96px)] flex flex-col justify-center items-center text-white">
 			<div class="flex flex-col gap-y-8 items-center justify-center">
 				<p class="text-7xl font-bold">BSQ</p>
 				<hr class="border border-b-white w-full" />
-				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, commodi.</p>
-				<Button text="Scopri di più" />
+				<p class="text-xl">Nulla è perenne tranne il cambiamento</p>
+			</div>
+
+			<a href="#about_us" class="absolute bottom-8 text-white text-6xl">
+				<Icon class="animate-bounce" icon="mdi:chevron-down" />
+			</a>
+
+			<!-- svelte-ignore a11y-click-events-have-key-events -->
+			<!-- svelte-ignore a11y-no-static-element-interactions -->
+			<div on:click={() => document.body.scrollIntoView()} class="fixed bottom-8 right-8 text-white text-6xl backdrop-blur bg-gray-700 bg-opacity-20 rounded-lg p-2" class:hidden={!scrolled}>
+				<Icon icon="mdi:chevron-up" />
 			</div>
 		</div>
 	</section>
-	<section class="flex justify-center">
-		<div class="p-32 w-1/2 flex flex-col items-center text-center gap-y-4">
-			<p class="font-bold text-3xl uppercase">We are BSQ!!!</p>
+	<section class="flex justify-center" id="about_us">
+		<div class="p-32 w-1/2 flex flex-col items-center text-center gap-y-12">
+			<p class="font-bold text-3xl">DOVE CUORE E TECNOLOGIA CORRONO INSIEME SIAMO PRESENTI</p>
 			<p class="leading-loose">
-				Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos delectus architecto velit
-				corrupti natus necessitatibus iure ad blanditiis. Corporis nobis laboriosam, pariatur in
-				nisi doloribus laudantium iure dolores laborum voluptatum.
+				Alla base del nostro lavoro ci sono elementi chiave come armonia, rispetto e gioco di squadra. Pur essendo cresciuti nel corso degli anni, coltiviamo un approccio da “piccola azienda” che ci rende, inoltre, veri e propri partner per i nostri clienti anche grazie a una lunga esperienza su prodotti e processi aziendali complessi. In ognuna delle nostre soluzioni infatti c'è un pezzo di noi, un valore unico e personale che, spesso, assume una forma unica per tutti i nostri partner o per i nostri prodotti creati all'interno della factory.
 			</p>
-			<Button text="About us" color="text-black" border="border-black" />
 		</div>
 	</section>
-	<section class="flex justify-center bg-stone-100">
-		<div class="p-32 w-1/2 flex justify-around gap-x-4">
-			<p class="font-bold text-3xl uppercase">I Nostri servizi</p>
+	<section class="flex justify-center bg-stone-100" id="our_services">
+		<div class="w-full py-32 px-96 flex flex-col gap-y-12">
+			<p class="font-bold text-3xl text-center">I NOSTRI SERVIZI</p>
+
+			<div class="grid grid-cols-3 gap-8">
+				<Box title="Telecomunicazioni" image="url(../public/antenna.jpg)" />
+				<Box title="Cloud - Data Center & Cyber Security" image="url(../public/ethernet.jpg)" />
+				<Box title="Energia" image="url(../public/energia.jpg)" />
+				<Box title="Laser Scanner" image="url(../public/laser.jpg)" />
+				<Box title="Realtà Virtuale" image="url(../public/vr.jpg)" />
+				<Box title="Droni" image="url(../public/drone.jpg)" />
+			</div>
+		</div>
+	</section>
+	<section class="flex justify-center bg-black" id="learning">
+		<div class="w-full py-32 px-96 flex flex-col text-white gap-y-12">
+			<p class="font-bold text-3xl text-center">FORMAZIONE E CRESCITA</p>
+
+			n BSQ “essere giovani” è una virtù. In partnership con il CENTRO ELIS è stato avviato un piano di formazione finalizzato all’inserimento in azienda d i neolaureati e neodiplomati in materie tecniche ed ingegneristiche da collocare negli ambiti ICT, Netw ork Deployment e Facility Management. Formazione retribuita fin dalla fase di training. Tutti gli allievi selezionati partecipano ad un percorso di formazione intensiva, diviso tra aula e luogo di lavoro, affiancati da professfionfisti BSQ, che già lavorano su progetti sfidanti presso alcuni dei nostri principali Clienti, con una percentuale di assunzione post academy superiore all'85%
+		</div>
+	</section>
+	<section class="flex px-96 py-8 bg-zinc-900 border-t-zinc-800 border-t">
+		<div class="flex gap-x-36 text-white">
+			<div class="flex flex-col gap-y-8">
+				<p class="font-bold">
+					OUR ADDRESS
+				</p>
+
+				Via Della Scrofa 57, 000186 Roma <br />
+				P.IVA 15363011006
+			</div>
+
+			<div class="flex flex-col gap-y-8">
+				<p class="font-bold">
+					FOLLOW US
+				</p>
+
+				<div class="flex flex-row text-2xl gap-x-4">
+					<Icon icon="mdi:twitter" />
+					<Icon icon="mdi:linkedin" />
+				</div>
+			</div>
 		</div>
 	</section>
 </div>
