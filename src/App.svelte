@@ -91,7 +91,7 @@
 			nostri principali Clienti, con una percentuale di assunzione post academy superiore all'85%
 		</div>
 	</section>
-	<section class="flex lg:px-96 lg:py-8 p-2 bg-zinc-900 border-t-zinc-800 border-t">
+	<section class="flex lg:px-96 lg:py-8 px-2 py-8 bg-zinc-900 border-t-zinc-800 border-t">
 		<div class="flex gap-x-36 text-white">
 			<div class="flex flex-col gap-y-8">
 				<p class="font-bold">OUR ADDRESS</p>
