@@ -17,7 +17,7 @@
 	>
 		<!-- <header class="flex w-2/3 justify-between items-center p-8 fixed top-0 transition-colors duration-200" class:bg-black={scrolled}> -->
 		<header
-			class="flex flex-col lg:flex-row gap-y-4 lg:gap-y-0 w-2/3 mt-8 bg-opacity-20 rounded-lg justify-between items-center p-8 fixed top-0 transition-colors"
+			class="flex flex-col lg:flex-row gap-y-4 lg:gap-y-0 lg:w-2/3 w-full mt-8 bg-opacity-20 rounded-lg justify-between items-center p-8 fixed top-0 transition-colors"
 			class:backdrop-blur={scrolled}
 			class:bg-gray-700={scrolled}
 		>
