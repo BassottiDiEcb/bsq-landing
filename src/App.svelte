@@ -7,12 +7,17 @@
 	import Energia from './pages/Energia.svelte'
 	import Telecomunicazioni from './pages/Telecomunicazioni.svelte'
 	import Virtuale from './pages/Virtuale.svelte'
+  import { scrolled } from './stores/scrolled'
 
 	export let url = ""
+
+  document.addEventListener('scroll', () => {
+		$scrolled = window.scrollY > 0;
+	});
 </script>
 
 <Router {url}>
-  <div>
+  <div class="font-montserrat">
     <Route path="/" component={Home} />
     <Route path="/cloud" component={Cloud} />
     <Route path="/droni" component={Droni} />
