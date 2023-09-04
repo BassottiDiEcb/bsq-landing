@@ -5,7 +5,7 @@
 	import { scrolled } from '../stores/scrolled'
 </script>
 
-<section
+<div
 	class="h-screen flex justify-center bg-center bg-cover"
 	style="background-image: url(/sea.jpg);"
 >
@@ -32,8 +32,8 @@
 			<Icon icon="mdi:chevron-up" />
 		</div>
 	</div>
-</section>
-<section class="flex justify-center" id="about_us">
+</div>
+<div class="flex justify-center" id="about_us">
 	<div class="lg:p-32 px-2 py-8 lg:w-1/2 w-full flex flex-col items-center text-center gap-y-12">
 		<p class="font-bold text-3xl">DOVE CUORE E TECNOLOGIA CORRONO INSIEME SIAMO PRESENTI</p>
 		<p class="leading-loose">
@@ -46,28 +46,28 @@
 			factory.
 		</p>
 	</div>
-</section>
-<section class="flex justify-center bg-stone-100" id="our_services">
+</div>
+<div class="flex justify-center bg-stone-100" id="our_services">
 	<div class="w-full lg:py-32 lg:px-96 px-2 py-8 flex flex-col gap-y-12">
 		<p class="font-bold text-3xl text-center">I NOSTRI SERVIZI</p>
 
 		<div class="grid lg:grid-cols-3 grid-cols-1 gap-8">
-			<Box href="/telecomunicazioni" title="Telecomunicazioni" image="url(/antenna.jpg)" />
+			<Box href="/telecomunicazioni" title="Telecomunicazioni" image="url(/telecomunicazioni.jpg)" />
 
 			<Box
 				href="/cloud"
 				title="Cloud - Data Center & Cyber Security"
-				image="url(/ethernet.jpg)"
+				image="url(/cloud.jpg)"
 			/>
 
 			<Box href="/energia" title="Energia" image="url(/energia.jpg)" />
 			<Box href="/laser" title="Laser Scanner" image="url(/laser.jpg)" />
-			<Box href="/virtuale" title="Realtà Virtuale" image="url(/vr.jpg)" />
+			<Box href="/virtuale" title="Realtà Virtuale" image="url(/virtuale.jpg)" />
 			<Box href="/droni" title="Droni" image="url(/drone.jpg)" />
 		</div>
 	</div>
-</section>
-<section class="flex justify-center bg-black" id="learning">
+</div>
+<div class="flex justify-center bg-black" id="learning">
 	<div class="w-full lg:py-32 lg:px-96 px-2 py-8 flex flex-col text-white gap-y-12">
 		<p class="font-bold text-3xl text-center">FORMAZIONE E CRESCITA</p>
 
@@ -80,8 +80,8 @@
 		alcuni dei nostri principali Clienti, con una percentuale di assunzione post academy superiore
 		all'85%
 	</div>
-</section>
-<section class="flex lg:px-96 lg:py-8 px-2 py-8 bg-zinc-900 border-t-zinc-800 border-t">
+</div>
+<div class="flex lg:px-96 lg:py-8 px-2 py-8 bg-zinc-900 border-t-zinc-800 border-t">
 	<div class="flex gap-x-36 text-white">
 		<div class="flex flex-col gap-y-8">
 			<p class="font-bold">OUR ADDRESS</p>
@@ -99,4 +99,4 @@
 			</div>
 		</div>
 	</div>
-</section>
+</div>

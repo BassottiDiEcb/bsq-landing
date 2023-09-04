@@ -10,7 +10,7 @@ class:bg-gray-700={$scrolled}
 >
   <h1 class="font-bold text-2xl text-white">BSQ</h1>
 
-  <nav class="flex lg:gap-x-12 text-sm text-md gap-x-4 uppercase">
+  <nav class="flex lg:gap-x-12 text-sm text-md gap-x-4 text-center uppercase">
     <NavigationLink href="#about_us" text="About us" />
     <NavigationLink href="#our_services" text="Our services" />
     <NavigationLink href="#learning" text="Learning" />
