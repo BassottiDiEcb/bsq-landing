@@ -6,7 +6,7 @@
 
 <article
 	class="bg-cover h-64 bg-center flex flex-col gap-y-8 p-8 items-center justify-center bg-gray-400 bg-blend-multiply"
-	style={`background-image: ${image};`}
+	style={`background-image: url(/${image}.jpg);`}
 >
 	<p class="text-2xl font-bold text-white">{title}</p>
 

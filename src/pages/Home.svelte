@@ -34,12 +34,12 @@
 	</div>
 </div>
 <div class="flex justify-center" id="about_us">
-	<div class="lg:p-32 px-2 py-8 lg:w-1/2 w-full flex flex-col items-center text-center gap-y-12">
+	<div class="lg:p-32 px-4 py-8 w-full flex flex-col items-center gap-y-12">
 		<p class="font-bold text-3xl">DOVE CUORE E TECNOLOGIA CORRONO INSIEME SIAMO PRESENTI</p>
 		<p class="leading-loose">
 			Alla base del nostro lavoro ci sono elementi chiave come armonia, rispetto e gioco di
-			squadra. Pur essendo cresciuti nel corso degli anni, coltiviamo un approccio da “piccola
-			azienda” che ci rende, inoltre, veri e propri partner per i nostri clienti anche grazie a
+			squadra. Pur essendo cresciuti nel corso degli anni, coltiviamo un approccio da "piccola
+			azienda" che ci rende, inoltre, veri e propri partner per i nostri clienti anche grazie a
 			una lunga esperienza su prodotti e processi aziendali complessi. In ognuna delle nostre
 			soluzioni infatti c'è un pezzo di noi, un valore unico e personale che, spesso, assume una
 			forma unica per tutti i nostri partner o per i nostri prodotti creati all'interno della
@@ -48,30 +48,30 @@
 	</div>
 </div>
 <div class="flex justify-center bg-stone-100" id="our_services">
-	<div class="w-full lg:py-32 lg:px-96 px-2 py-8 flex flex-col gap-y-12">
+	<div class="w-full lg:py-32 lg:px-32 px-2 py-8 flex flex-col gap-y-12">
 		<p class="font-bold text-3xl text-center">I NOSTRI SERVIZI</p>
 
 		<div class="grid lg:grid-cols-3 grid-cols-1 gap-8">
-			<Box href="/telecomunicazioni" title="Telecomunicazioni" image="url(/telecomunicazioni.jpg)" />
+			<Box href="/telecomunicazioni" title="Telecomunicazioni" image="telecomunicazioni" />
 
 			<Box
 				href="/cloud"
 				title="Cloud - Data Center & Cyber Security"
-				image="url(/cloud.jpg)"
+				image="cloud"
 			/>
-
-			<Box href="/energia" title="Energia" image="url(/energia.jpg)" />
-			<Box href="/laser" title="Laser Scanner" image="url(/laser.jpg)" />
-			<Box href="/virtuale" title="Realtà Virtuale" image="url(/virtuale.jpg)" />
-			<Box href="/droni" title="Droni" image="url(/drone.jpg)" />
+ 
+			<Box href="/energia" title="Energia" image="energia" />
+			<Box href="/laser" title="Laser Scanner" image="laser" />
+			<Box href="/virtuale" title="Realtà Virtuale" image="virtuale" />
+			<Box href="/droni" title="Droni" image="droni" />
 		</div>
 	</div>
 </div>
 <div class="flex justify-center bg-black" id="learning">
-	<div class="w-full lg:py-32 lg:px-96 px-2 py-8 flex flex-col text-white gap-y-12">
+	<div class="w-full lg:py-32 lg:px-96 px-4 py-8 flex flex-col text-white gap-y-12">
 		<p class="font-bold text-3xl text-center">FORMAZIONE E CRESCITA</p>
 
-		In BSQ “essere giovani” è una virtù. In partnership con il CENTRO ELIS è stato avviato un
+		In BSQ "essere giovani" è una virtù. In partnership con il CENTRO ELIS è stato avviato un
 		piano di formazione finalizzato all'inserimento in azienda di neolaureati e neodiplomati in
 		materie tecniche ed ingegneristiche da collocare negli ambiti ICT, Netw ork Deployment e
 		Facility Management. Formazione retribuita fin dalla fase di training. Tutti gli allievi
