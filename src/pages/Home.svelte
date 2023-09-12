@@ -26,7 +26,7 @@
 		<!-- svelte-ignore a11y-no-static-element-interactions -->
 		<div
 			on:click={() => document.body.scrollIntoView()}
-			class="fixed bottom-8 right-8 text-white text-6xl backdrop-blur bg-gray-700 bg-opacity-20 rounded-lg"
+			class="fixed bottom-8 right-8 text-white cursor-pointer text-6xl backdrop-blur bg-gray-700 bg-opacity-20 rounded-lg"
 			class:hidden={!$scrolled}
 		>
 			<Icon icon="mdi:chevron-up" />
