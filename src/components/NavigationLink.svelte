@@ -4,7 +4,7 @@
 
 <a
 	{href}
-	class="text-white underline-offset-8 hover:underline"
+	class="underline-offset-8 hover:underline"
 >
 	{text}
 </a>

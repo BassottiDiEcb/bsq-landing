@@ -9,7 +9,7 @@
 	import Virtuale from './pages/Virtuale.svelte'
   import { scrolled } from './stores/scrolled'
 
-	export let url = ""
+	export let url = "/"
 
   document.addEventListener('scroll', () => {
 		$scrolled = window.scrollY > 0;

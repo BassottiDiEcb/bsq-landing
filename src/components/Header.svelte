@@ -1,6 +1,7 @@
 <script lang="ts">
   import NavigationLink from './NavigationLink.svelte'
   import { scrolled } from '../stores/scrolled'
+	import { Link } from 'svelte-routing';
 </script>
 
 <header
@@ -10,8 +11,8 @@ class:bg-gray-700={$scrolled}
 >
   <h1 class="font-bold text-2xl text-white">BSQ</h1>
 
-  <nav class="flex lg:gap-x-12 text-sm text-md gap-x-6 text-center uppercase mt-5 lg:mt-0">
-    <NavigationLink href="/" text="Home" />
+  <nav class="flex lg:gap-x-12 text-sm text-md gap-x-6 text-center uppercase mt-5 lg:mt-0 text-white">
+    <Link to="/" class="hover:underline underline-offset-8">Home</Link>
 
     {#if window.location.pathname === '/'}
       <NavigationLink href="#about_us" text="About us" />
