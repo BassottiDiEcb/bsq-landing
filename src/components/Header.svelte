@@ -12,8 +12,11 @@ class:bg-gray-700={$scrolled}
 
   <nav class="flex lg:gap-x-12 text-sm text-md gap-x-6 text-center uppercase mt-5 lg:mt-0">
     <NavigationLink href="/" text="Home" />
-    <NavigationLink href="#about_us" text="About us" />
-    <NavigationLink href="#our_services" text="Our services" />
-    <NavigationLink href="#learning" text="Learning" />
+
+    {#if window.location.pathname === '/'}
+      <NavigationLink href="#about_us" text="About us" />
+      <NavigationLink href="#our_services" text="Our services" />
+      <NavigationLink href="#learning" text="Learning" />
+    {/if}
   </nav>
 </header>
