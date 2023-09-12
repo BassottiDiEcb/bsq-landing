@@ -76,7 +76,7 @@
 		materie tecniche ed ingegneristiche da collocare negli ambiti ICT, Netw ork Deployment e
 		Facility Management. Formazione retribuita fin dalla fase di training. Tutti gli allievi
 		selezionati partecipano ad un percorso di formazione intensiva, diviso tra aula e luogo di
-		lavoro, affiancati da professfionfisti BSQ, che già lavorano su progetti sfidanti presso
+		lavoro, affiancati da professionisti BSQ, che già lavorano su progetti sfidanti presso
 		alcuni dei nostri principali Clienti, con una percentuale di assunzione post academy superiore
 		all'85%
 	</div>
